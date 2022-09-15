@@ -106,7 +106,7 @@ class _ReusableVideoListWidgetState extends State<ReusableVideoListWidget> {
             ),
           ),
           VisibilityDetector(
-            key: Key(hashCode.toString() + DateTime.now().toString()),
+            key: Key(hashCode.toString()),
             onVisibilityChanged: (info) {
               if (!widget.canBuildVideo!()) {
                 _timer?.cancel();
